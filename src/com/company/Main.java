@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Enter Row Count");
@@ -32,10 +32,11 @@ public class Main {
             System.out.println("Mine Table Layout");
             //mine.mineTable();
             System.out.println("-------------------------------------");
+            System.out.println("-------------------------------------");
             mine.getTable();
             System.out.println("-------------------------------------");
+            System.out.println("-------------------------------------");
             mine.getMineTable();
-
             System.out.println("Select a Row Number: ");
             rowSelection = scan.nextInt();
             System.out.println("Select a Column Number: ");
@@ -45,27 +46,13 @@ public class Main {
 
             mine.checkSelectionForBomb();
             mine.checkSelectionForNumber();
-
-
-
         }
         if (!mine.gameOver){
-            System.out.println("!!!!!!!!!__Congratulations__!!!!!!!!!");
+            System.out.println("!!!!!!!!!.YOU WIN.!!!!!!!!!");
         }
         else{
             System.out.println("GAME OVER");
         }
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
